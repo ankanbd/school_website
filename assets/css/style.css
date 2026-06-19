@@ -1,0 +1,94 @@
+/* Custom styles for School Website */
+
+body {
+    background-color: #f8f9fa;
+    color: #222;
+    font-family: 'Hind Siliguri','Noto Sans Bengali', sans-serif;
+    font-variant-ligatures: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga" 1, "clig" 1, "calt" 1;
+}
+
+/* Prefer Bengali webfonts on key text elements */
+h1, h2, h3, h4, h5, h6,
+.navbar-brand {
+    font-family: 'Hind Siliguri','Noto Sans Bengali', sans-serif;
+    letter-spacing: normal;
+}
+
+/* Header Bar */
+.bg-primary {
+    background-color: #0056b3 !important;
+}
+
+/* Footer */
+footer {
+    font-size: 0.95rem;
+}
+footer .fw-bold {
+    font-size: 1.1rem;
+}
+footer a {
+    font-size: 1.05rem;
+}
+
+/* Card Customization */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card-header {
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+/* Sidebar Widgets */
+.card.mb-4 {
+    border-left: 4px solid #0d6efd;
+}
+.mb-4 {
+    margin-bottom: 0.5rem !important;
+}
+
+/* Carousel */
+.carousel-item img {
+    border-radius: 0.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+    .col-lg-8, .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Prevent breaking Bootstrap grid */
+.row, [class^="col-"] {
+    box-sizing: border-box;
+}
+
+.py-5 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+.my-5 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+} 
+.justified-text {
+        text-align: justify;
+    }
+
+/* Bengali shaping safeguards */
+:lang(bn), [lang="bn"] {
+    letter-spacing: normal !important;
+    font-feature-settings: "liga" 1, "clig" 1, "calt" 1;
+    font-kerning: normal;
+}
+:lang(bn) h1, :lang(bn) h2, :lang(bn) h3, :lang(bn) h4, :lang(bn) h5, :lang(bn) h6,
+[lang="bn"] h1, [lang="bn"] h2, [lang="bn"] h3, [lang="bn"] h4, [lang="bn"] h5, [lang="bn"] h6 {
+    letter-spacing: normal !important;
+}
+
